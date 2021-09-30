@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.team3.udp.solution1.client;
+// package udp.solution1.client;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -14,14 +14,15 @@ import java.net.InetAddress;
  */
 public class Sender {
 	private final static int PORT = 13;
-//	private static final String HOSTNAME = "192.168.1.22";
+	// private static final String HOSTNAME = "192.168.1.22";
 	private static final String HOSTNAME = "localhost";
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		try(DatagramSocket socket = new DatagramSocket(0)){
-			
+		try (DatagramSocket socket = new DatagramSocket(0)) {
+
 			socket.setSoTimeout(10000);
 			InetAddress host = InetAddress.getByName(HOSTNAME);
 			DatagramPacket request = new DatagramPacket(new byte[1], 1, host, PORT);
