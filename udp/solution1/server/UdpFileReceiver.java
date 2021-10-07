@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.team3.udp;
+// package com.team3.udp;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,7 +20,8 @@ import java.util.Enumeration;
  */
 public class UdpFileReceiver {
 	private final static int LOCAL_PORT = 58972;
-//	public final static String FILE_TO_RECEIVED = System.getProperty("user.dir") + "/a.jpg";
+	// public final static String FILE_TO_RECEIVED = System.getProperty("user.dir")
+	// + "/a.jpg";
 
 	public final static int MAX_SIZE = 1024;
 
@@ -105,7 +106,7 @@ public class UdpFileReceiver {
 				while (addresses.hasMoreElements()) {
 					InetAddress addr = addresses.nextElement();
 					ip = addr.getHostAddress();
-//					System.out.println(iface.getDisplayName() + " " + ip);
+					// System.out.println(iface.getDisplayName() + " " + ip);
 				}
 			}
 		} catch (SocketException e) {
