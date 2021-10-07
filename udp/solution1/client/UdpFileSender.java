@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.team3.udp;
+// package com.team3.udp;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -23,7 +23,12 @@ import java.util.Enumeration;
 public class UdpFileSender {
 	private final static int SERVER_PORT = 58972;
 	private final static int LOCAL_PORT = 10000;
-	private static final String SERVER_IP = "192.168.1.16"; // "192.168.1.16";//"127.0.0.1";//"localhost"
+	private static final String SERVER_IP = "172.20.10.4";// "192.168.0.3";//"192.168.1.1";// "24.245.28.53";// "fe80:0:0:0:f18a:
+	// fc0b:360:1daf";/
+	// "2601:4 41:8780: 0:1859:f4:5528
+	// c7";//"f e8 0: 0:0:8dc:6cb
+	// 3f57:fee9";// "172.20.10.4"; //
+	// "192.168.1.16";//"127.0.0.1";//"localhost"
 	private final static int MAX_SIZE = 1024;
 
 	/**
